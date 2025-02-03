@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./css/home_style.css">
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+    <div class="gradient-background bg">
+        <nav>
+          <div class="dropdown dropdown-right">
+            <div tabindex="0" role="button" class="btn btn-primary m-1">داشبرد</div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <li>
+                <a href="./admin_news_panel.html">
+                  <img src="./images/news.svg">
+                  درج خبر</a>
+                </li>
+                <li>
+                  <a href="./admins_list.html">
+                    <img src="./images/user.svg">
+                  ادمین ها</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <span>Namso</span>
+            <span> News</span>
+          </div>
+        </nav>
+        
+        <div class="container">
+          <div class="button-container">
+            <label class="label cursor-pointer">
+              <input type="checkbox" id="technology" checked class="checkbox" />
+              <span>تکنولوژی</span>
+            </label>
+            
+            <label class="label cursor-pointer">
+              <input type="checkbox" id="sports" class="checkbox" />
+              <span>ورزشی</span>
+            </label>
+    
+            <label class="label cursor-pointer">
+              <input type="checkbox" id="economy" checked class="checkbox" />
+              <span>اقتصادی</span>
+            </label>
+    
+            <label class="label cursor-pointer">
+              <input type="checkbox" id="art" checked class="checkbox" />
+              <span>هنری</span>
+            </label>
+    
+            <div class="ref-button-back">
+              <img src="./images/refresh.svg" id="refresh-button" alt="بروزرسانی اخبار" title="بروزرسانی اخبار">
+            </div>
+          </div>
+          
+          <div class="inbox">
+            <h3>متاسفانه خبری یافت نشد !</h3>
+            <img src="./images/empty inbox.png" alt="empty inbox">
+          </div>
+
+          <div id="table-box" style="overflow-y: auto; max-height: 68vh;">
+            <table class="news-table">
+              <thead>
+                <tr>
+                  <th>عنوان</th>
+                  <th>محتوا</th>
+                  <th>عکس</th>
+                  <th>دسته‌بندی</th>
+                  <th>نویسنده</th>
+                  <th>اعمال</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <div class="toast toast-start">
+      <div class="alert alert-error" style="background-color: #fce9e5; border: 2px solid #dd1301; display: none;">
+        <span style="color: #dd1301;">متاسفانه مشکلی در حذف خبر به وجود آمده است</span>
+      </div>
+      <div class="alert alert-success" style="background-color: #cdffdf; border: 2px solid #20cb20b1; display: none;">
+        <span style="color: #20cb20b1; font-size: 1rem; font-weight: bold;">خبر مورد نظر با موفقیت حذف شد</span>
+      </div>
+    </div>
+    <script src="./JS/admin.js"></script>
+</body>
+</html>

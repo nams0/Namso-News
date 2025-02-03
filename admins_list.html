@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admins List</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./css/home_style.css">
+    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+    <div class="gradient-background bg">
+        <nav>
+          <div class="dropdown dropdown-right">
+            <div tabindex="0" role="button" class="btn btn-primary m-1">داشبرد</div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <li>
+                <a href="./admin_news_panel.html">
+                  <img src="./images/news.svg">
+                  درج خبر</a>
+                </li>
+                <li>
+                  <a href="./admins_list.html">
+                    <img src="./images/user.svg">
+                  ادمین ها</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <span>Namso</span>
+            <span> News</span>
+          </div>
+        </nav>
+        
+        <div class="container">
+          <div id="table-box" style="overflow-y: auto; max-height: 68vh;">
+            <table class="news-table">
+              <thead>
+                <tr>
+                  <th>شناسه</th>
+                  <th>نام</th>
+                  <th>ایمیل</th>
+                  <th>تاریخ ساخت حساب</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+    </div>    
+    <script src="./JS/admins_list.js"></script>
+</body>
+</html>

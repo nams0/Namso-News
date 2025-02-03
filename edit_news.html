@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Panel</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./css/home_style.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./css/news_panel.css">
+</head>
+<body>
+    <div class="gradient-background bg">
+        <nav>
+          <div class="dropdown dropdown-right">
+            <div tabindex="0" role="button" class="btn btn-primary m-1">داشبرد</div>
+            <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+              <li>
+                <a href="./admin_news_panel.html">
+                  <img src="./images/news.svg">
+                  درج خبر</a>
+                </li>
+                <li>
+                  <a href="./admins_list.html">
+                    <img src="./images/user.svg">
+                  ادمین ها</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <span>Namso</span>
+            <span> News</span>
+          </div>
+        </nav>
+
+        <div class="news-container">
+            <div>
+              <span class="required">*</span>
+              <span>عنوان خبر را وارد کنید</span>
+            </div>
+            <input id="title" type="text" placeholder="عنوان خبر" class="input input-bordered input-primary w-full max-w-xs"
+             style="background-color: rgb(231, 229, 229); color: #494949;"/>
+            <div>
+              <span class="required">*</span>
+              <span>متن خبر را وارد کنید</span>
+            </div>
+            <textarea class="textarea textarea-primary" placeholder="متن خبر" 
+            style="background-color: rgb(231, 229, 229); font-size: 1.2rem; color: #494949;"></textarea>
+            <div class="image-title">
+              <span class="required">*</span>
+              <span>لینک تصویر خبر را وارد کنید</span>
+            </div>
+            <input id="image-url" type="text" placeholder="لینک تصویر" class="input input-bordered input-primary w-full max-w-xs"
+            style="background-color: rgb(231, 229, 229); color: #494949; width: 48%;"/>
+            
+            <div>
+              <span class="required">*</span>
+              <span>دسته بندی خبر را انتخاب کنید</span>
+            </div>
+            <div class="flex items-center" id="radio-container">
+              <input id="technology" type="radio" name="radio-2" value="technology" class="radio radio-primary" />
+              <span class="ml-2">تکنولوژی</span>
+              
+              <input id="sports" type="radio" name="radio-2" value="sports" class="radio radio-primary" />
+              <span class="ml-2">ورزشی</span>      
+            
+              <input id="economy" type="radio" name="radio-2" value="economy" class="radio radio-primary" />
+              <span class="ml-2">اقتصادی</span>
+      
+              <input id="art" type="radio" name="radio-2" value="art" class="radio radio-primary" />
+              <span class="ml-2">هنری</span>
+            </div>
+
+            <div class="btn-container">
+              <button id="submit-button" class="btn btn-outline btn-primary">ویرایش خبر</button>
+              <button id="cancel-button" class="btn btn-outline btn-error">انصراف</button>
+            </div>
+        </div>
+    </div>
+    <div class="toast toast-start">
+      <div class="alert alert-error" style="background-color: #fce9e5; border: 2px solid #dd1301; display: none;">
+        <span style="color: #dd1301;"></span>
+      </div>
+      <div class="alert alert-success" style="background-color: #cdffdf; border: 2px solid #20cb20b1; display: none;">
+        <span style="color: #20cb20b1; font-size: 1rem; font-weight: bold;">خبر مورد نظر با موفقیت ویرایش شد</span>
+      </div>
+    </div>
+    <script src="./JS/edit_news.js"></script>
+</body>
+</html>

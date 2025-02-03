@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namso News</title>
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="./css/home_style.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <div class="gradient-background bg">
+    <nav>
+      <button id="admin-login-button">ورود به پنل ادمین</button>
+      <div>
+        <span>Namso</span>
+        <span> News</span>
+      </div>
+    </nav>
+    
+    <div class="container">
+      <div class="button-container">
+        <label class="label cursor-pointer">
+          <input type="checkbox" id="technology" checked class="checkbox" />
+          <span>تکنولوژی</span>
+        </label>
+        
+        <label class="label cursor-pointer">
+          <input type="checkbox" id="sports" class="checkbox" />
+          <span>ورزشی</span>
+        </label>
+
+        <label class="label cursor-pointer">
+          <input type="checkbox" id="economy" checked class="checkbox" />
+          <span>اقتصادی</span>
+        </label>
+
+        <label class="label cursor-pointer">
+          <input type="checkbox" id="art" checked class="checkbox" />
+          <span>هنری</span>
+        </label>
+
+        <div class="ref-button-back">
+          <img src="./images/refresh.svg" id="refresh-button" alt="بروزرسانی اخبار" title="بروزرسانی اخبار">
+        </div>
+      </div>
+      
+      <div class="inbox">
+        <h3>متاسفانه خبری یافت نشد !</h3>
+        <img src="./images/empty inbox.png" alt="empty inbox">
+      </div>
+
+      <div id="table-box" style="overflow-y: auto; max-height: 68vh;">
+        <table class="news-table">
+          <thead>
+            <tr>
+              <th>عنوان</th>
+              <th>محتوا</th>
+              <th>عکس</th>
+              <th>دسته‌بندی</th>
+              <th>نویسنده</th>
+              <th>تاریخ انتشار</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+ 
+  <footer class="gradient-background">
+    <img id="wave" src="./images/wave.svg" alt="wave">
+    <div class="footer-content">
+      <p>Designed & developed by <span>Amirhossein Esmaeili</span></p>
+      <p id="year"></p>
+      <a href="https://t.me/Anthony_pit" target="_blank">
+        <img id="telegram" src="./images/telegram.svg" alt="telegram">
+      </a>
+    </div>
+  </footer>
+
+  <script src="./JS/script.js"></script>
+</body>
+</html>
+

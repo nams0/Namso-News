@@ -1,0 +1,118 @@
+:root {
+    --color-primary: #605DFF;
+    --color-secondary: #4845c5;
+    --color-tertiary: #697089;
+    --color-edit: rgb(255,248,230);
+    --color-edit-text-border: rgb(239,165,54);
+    --color-error: #fce9e5;
+    --color-error-text-border: #dd1301;
+}
+
+body {
+    font-family: 'iranyekanwebregular';
+}
+
+.btn {
+    background-color: var(--color-secondary);
+}
+
+.dropdown ul {
+    width: 130px;
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+}
+
+.dropdown ul img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn {
+    width: 100px;
+}
+
+.news-table {
+    width: 80%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#table-box {
+    display: none;
+}
+
+.news-table th, .news-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.news-table th {
+    background-color: var(--color-primary);
+    color: white;  
+}
+
+.news-table th:first-child {
+    border-top-right-radius: 10px;  
+} 
+
+.news-table th:last-child {
+    border-top-left-radius: 10px;
+}
+
+.news-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.news-photo {
+    width: 1000px;
+    height: 90px;
+    border-radius: 20px;
+}
+
+tbody td button:nth-child(1) {
+    background-color: var(--color-edit);
+    border: 1px solid var(--color-edit-text-border);
+    color: var(--color-edit-text-border);
+    width: 65px;
+    margin-bottom: 10px;
+}
+
+tbody td button:nth-child(2) {
+    background-color: var(--color-error);
+    border: 1px solid var(--color-error-text-border);
+    color: var(--color-error-text-border);
+    width: 55px;
+}
+
+tbody button {
+    padding: 2px 3px;
+    border-radius: 5px;
+    display: flex;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    tbody td button:nth-child(1) {
+        width: 55px;
+        font-size: 10px;
+    }
+    tbody td button:nth-child(2) {
+        font-size: 10px;
+        width: 45px;
+    }
+    .news-table {
+        width: 98%;
+    }
+    .news-photo {
+        width: 1250px;
+        height: 90px;
+    }
+}
