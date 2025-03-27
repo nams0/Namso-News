@@ -4,7 +4,7 @@
 
 # **📰 News API - Node.js Backend**  
 
-A simple **Node.js** backend for a news website that allows **admins** to manage news articles and users to fetch news based on categories.
+A simple **Node.js** backend & pure **Javascript** frontend for a news website that allows **admins** to manage news articles and users to fetch news based on categories.
 
 ## **🚀 Features**
 - 🔐 **Admin Login** No Registration, Manual Admin Insertion (will be added soon)
